@@ -19,7 +19,18 @@
  *
 */
 
-
+function makeNamesObject(str0, str1, str2){
+	let initArr = [str0, str1, str2]
+	const resObj = {};
+	console.log(initArr);
+	for (let i=0; i < initArr.length; i++){
+		let tempArr = initArr[i].split(" ");
+		console.log(tempArr);
+		resObj[tempArr[0]] = tempArr[1];
+		console.log(resObj);
+	}
+	return resObj;
+}
 
 
 

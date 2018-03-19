@@ -15,8 +15,9 @@
 */
 
 
-
-
+function createHtmlElement(object) {
+  return `<${object.element} class="${object.classNames}">${object.textContent}</${object.element}>`;
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

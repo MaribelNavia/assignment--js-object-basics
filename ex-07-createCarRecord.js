@@ -19,7 +19,35 @@
 **/
 
 
+function createCarRecord(make, model, year, license){
+	if(typeof make != 'undefined' &&
+	   typeof model != 'undefined' && 
+	   typeof year != 'undefined' &&
+	   typeof license != 'undefined'){
+	   	if(typeof make === 'string' &&
+	   	   typeof model === 'string' &&
+	   	   typeof license === 'string'){
+	   	   	if(typeof year === 'number'){
+	   	   		let carRecordObject = {
+					make: make,
+					model: model,
+					year: year,
+					license: license
+				}
+				return carRecordObject
+	   	   	}else{
+	   	   		return '3rd argument must be a Number'
+	   	   	}
 
+	   	}else {
+	   		return '1st, 2nd, and 4th arguments must be String'
+	   	}
+		
+	}else { 
+		return 'new record must have make, model, year, and license values'
+	}
+}
+ 
 
 
 
